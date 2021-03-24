@@ -6,16 +6,16 @@
     <link rel="stylesheet" href="style.css" media="screen" charset="utf-8">
   </head>
   <body>
-    <div class="header">
+    <header class="header">
       <img class="header-image" src="./eisenhower-matrix.jpg">
       <a class="more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
-    </div>
-    <div class="wrapper">
-      <p id="add-task">
+    </header>
+    <main class="main">
+      <section id="add-task">
         <label for="new-task">Add Item</label>
         <input id="new-task" type="text">
         <button>Add</button>
-      </p>
+      </section>
       <h3>Todo</h3>
       <ul id="incomplete-tasks">
         <li>
@@ -30,7 +30,7 @@
         <li class="edit-mode">
           <input type="checkbox">
           <label class="task">Go Shopping</label>
-          <input type="text" value="go shopping" class="task">
+          <input type="text" value="Go Shopping" class="task">
           <button class="edit">Save</button>
           <button class="delete">
             <img src="./remove.svg">
@@ -49,7 +49,7 @@
           </button>
         </li>
       </ul>
-    </div>
+    </main>
     <script src="app.js"></script>
   </body>
 </html>
