@@ -13,11 +13,11 @@ body {
 }
 
 
-.header-image {
+.header__image {
   width: 100%;
 }
 
-.more-inf {
+.header__more-inf {
   font-family: fantasy, cursive;
 }
 
@@ -35,7 +35,7 @@ body {
   margin: 0 auto 0;
 }
 
-.task {
+.tasks__task {
   width: 56%;
   display: inline-block;
 }
@@ -45,8 +45,7 @@ ul {
   padding: 0px;
 }
 
-li, 
-h3 {
+li{
   list-style: none;
 }
 
@@ -70,8 +69,8 @@ button:hover {
 }
 
 /* Heading */
-h3,
-label[for="new-task"] {
+.tasks__h3,
+.add-task__label {
   color: #333333;
   font-weight: 700;
   font-size: 15px;
@@ -81,7 +80,7 @@ label[for="new-task"] {
   text-transform: uppercase;
 }
 
-input[type="text"] {
+.tasks__text {
   margin: 0;
   font-size: 18px;
   line-height: 18px;
@@ -94,18 +93,22 @@ input[type="text"] {
   color: #888888;
 }
 
-input[type="text"]:focus {
+.tasks__text:focus {
   color: #333333;
 }
 
 /* New Task */
-label[for="new-task"] {
+.add-task__label {
   display: block;
   margin: 0 0 20px;
 }
 
-#new-task {
+.add-task__new-task {
   width: 318px;
+  border: 1px solid #ddd;
+  background: #fff;
+  border-radius: 6px;
+  font-family: Lato, sans-serif;
 }
 
 button:hover {
@@ -120,51 +123,51 @@ li {
   vertical-align: middle;
 }
 
-input[type="checkbox"] {
+.tasks__checkbox {
   margin: 0 10px;
 }
 
-.task {
+.tasks__task {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-input[type="text"] {
+.tasks__text {
   width: 226px;
 }
 
-.delete:hover {
+.tasks__delete:hover {
   color: #cf2323;
 }
 
-.delete img {
+.tasks__delete img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-.delete img:hover {
+.tasks__delete img:hover {
   transform: rotateZ(0);
 }
 
 /* Completed */
-#completed-tasks label {
+.tasks__completed-tasks label {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit Task */
-li input[type="text"] {
+li .tasks__text {
   display: none;
 }
 
-.edit-mode input[type="text"] {
+.tasks__item_edit-mode .tasks__text {
   display: inline-block;
   width: 224px;
 }
 
-.edit-mode label {
+.tasks__item_edit-mode label {
   display: none;
 }
